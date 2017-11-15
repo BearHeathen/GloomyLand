@@ -12,7 +12,7 @@ import org.newdawn.slick.state.StateBasedGame;
 import com.gloomshroud.gloomyland.utility.DebugInfo;
 import com.gloomshroud.gloomyland.utility.MenuButtonProcessor;
 
-public class Menu extends BasicGameState {
+public class MainMenu extends BasicGameState {
 	
 	// PROPERTIES
 	public Image playNow;
@@ -21,7 +21,7 @@ public class Menu extends BasicGameState {
 	public Input input;
 	public  MenuButtonProcessor bp;
 	
-	public Menu(int menu) {
+	public MainMenu(int menu) {
 		// TODO Auto-generated constructor stub
 	}
 

@@ -8,7 +8,7 @@ import org.newdawn.slick.state.StateBasedGame;
 
 public class Game extends StateBasedGame {
 	
-	public static final String version = " (v0.1)";
+	public static final String version = " (v0.1.2)";
 	public static final String gameName = "Gloomy Land" + version;
 	public static final int menu = 0;
 	public static final int play = 1;
@@ -16,7 +16,7 @@ public class Game extends StateBasedGame {
 	
 	public Game(String gameName) {
 		super(gameName);
-		this.addState(new Menu(menu));
+		this.addState(new MainMenu(menu));
 		this.addState(new Play());
 	}
 
