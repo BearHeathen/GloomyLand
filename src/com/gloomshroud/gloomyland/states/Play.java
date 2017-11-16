@@ -1,4 +1,4 @@
-package com.gloomshroud.gloomyland;
+package com.gloomshroud.gloomyland.states;
 
 import org.newdawn.slick.Animation;
 import org.newdawn.slick.AppGameContainer;
@@ -68,7 +68,7 @@ public class Play extends BasicGameState {
 	}
 
 	private void processMenu(GameContainer gc, StateBasedGame sbg) {
-		// TODO: Put all this into a new game state pause menu. Confirm each action except resume. Save/Load.
+		// TODO Put all this into a new game state pause menu. Confirm each action except resume. Save/Load.
 		Input input = gc.getInput();
 		if (input.isKeyDown(Input.KEY_ESCAPE)) {
 			quit = true;

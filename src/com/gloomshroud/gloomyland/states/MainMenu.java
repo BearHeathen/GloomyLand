@@ -1,4 +1,4 @@
-package com.gloomshroud.gloomyland;
+package com.gloomshroud.gloomyland.states;
 
 import org.lwjgl.input.Mouse;
 import org.newdawn.slick.GameContainer;
@@ -17,7 +17,7 @@ public class MainMenu extends BasicGameState {
 	// PROPERTIES
 	public Image playNow;
 	public Image exitGame;
-	public Image title;
+	public Image titlePage;
 	public Input input;
 	public  MenuButtonProcessor bp;
 	
@@ -27,15 +27,16 @@ public class MainMenu extends BasicGameState {
 
 	@Override
 	public void init(GameContainer gc, StateBasedGame sbg) throws SlickException {
+		// TODO Build better buttons
 		playNow = new Image("res/button_play.png");
 		exitGame = new Image("res/button_exit.png");
-		title = new Image("res/title.png");
+		titlePage = new Image("res/title.png");
 	}
 
 	@Override
 	public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException {
 		DebugInfo.DrawDebugInfo(g);
-		title.draw(0, 0);
+		titlePage.draw(0, 0);
 		playNow.draw(100, 200);
 		exitGame.draw(400, 200);
 	}
